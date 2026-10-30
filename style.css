@@ -1,0 +1,345 @@
+
+/* =========================
+   IMPOSTAZIONI GENERALI
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #ffffff;
+
+    color: #111111;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   GRIGLIA
+========================= */
+
+.container {
+    width: 100%;
+
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding-left: 160px;
+    padding-right: 160px;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    column-gap: 24px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 64px;
+
+    border-bottom: 1px solid #777777;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 32px;
+}
+
+.header p {
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding-top: 100px;
+
+    padding-bottom: 80px;
+}
+
+.hero-content {
+    grid-column: 1 / 10;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: 76px;
+
+    font-weight: bold;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+
+    margin: 0 0 24px;
+}
+
+.subtitle {
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    margin: 0;
+
+    max-width: 850px;
+}
+
+
+/* =========================
+   IMMAGINE PRINCIPALE
+========================= */
+
+.main-image {
+    width: 100%;
+}
+
+.main-image img {
+    width: 100%;
+
+    height: 620px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   ARTICOLO
+========================= */
+
+.article {
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+}
+
+.article-grid {
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 24px;
+}
+
+.article-text {
+    grid-column: 1 / 9;
+}
+
+.article-text p {
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    margin-top: 0;
+
+    margin-bottom: 32px;
+}
+
+.article-image {
+    grid-column: 9 / 13;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.article-image img {
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   IMMAGINE CON TESTO
+========================= */
+
+.quote-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+}
+
+.quote-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.quote-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.quote-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quote-content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 180px 0;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    column-gap: 24px;
+
+    padding-left: 160px;
+    padding-right: 160px;
+
+    align-items: end;
+
+    color: white;
+}
+
+.quote-content p {
+    width: 66.6667%;
+
+    margin: 0 auto;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+.quote-content p {
+    max-width: 900px;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    margin: 0;
+}
+
+
+/* =========================
+   CONCLUSIONE
+========================= */
+
+.conclusion {
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+}
+
+.conclusion .container > p {
+    grid-column: 1 / 10;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    margin: 0;
+}
+
+
+/* =========================
+   fRASE CONCLUSIVA
+========================= */
+
+.cta {
+    background-color: #b7a397;
+
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+}
+
+.cta-content {
+    grid-column: 1 / 9;
+}
+
+.cta h2 {
+    font-family: Georgia, serif;
+
+    font-size: 64px;
+
+    line-height: 0.98;
+
+    letter-spacing: -1.5px;
+
+    margin: 0 0 32px;
+}
+
+.cta a {
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+}
+
+.cta a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    border-top: 1px solid #777777;
+
+    padding: 24px 32px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer p {
+    font-size: 12px;
+
+    margin: 0;
+}
